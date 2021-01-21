@@ -1,0 +1,11 @@
+.story{
+    grid-column: full-star / full-end;
+    &__pictures{
+background-color: forestgreen;
+grid-column: full-start / col-end 5;
+    }
+    &__content{
+        background-color: goldenrod;
+        grid-column: col-start 6/ full-end;
+    }
+}

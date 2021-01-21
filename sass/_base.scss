@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+ box-sizing: border-box;
+ font-size: 62.5%;
+
+}
+
+body{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: ivory;
+    line-height: 1.5;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 2vw 80vh min-content 40vw repeat(3, min-content);
+    //grid-template-columns: minmax(6rem, 1fr) repeat(7, minmax(min-content, 15rem) minmax(6rem, 1fr);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,  [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end]; // total width 1140px and devide this with 8 columns so the result is 142.5
+    font-size: 20px;
+}
+
+ 

@@ -1,0 +1,10 @@
+.features{
+    background-color: lightcyan;
+    grid-column: center-start / center-end;
+    color: black;
+    margin: 10rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+}
